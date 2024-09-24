@@ -1,8 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Bindings/bindings.dart';
+import 'package:echo_cash/Pages/Menu/home_menu.dart';
+import 'package:echo_cash/Pages/Menu/profile_menu.dart';
+import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
 import 'package:echo_cash/Pages/dashboard.dart';
 import 'package:echo_cash/Pages/login_page.dart';
+import 'package:echo_cash/Pages/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -35,8 +39,28 @@ class MyApp extends StatelessWidget {
           binding: MyBindings(),
         ),
         GetPage(
-          name: '/Dashboard',
+          name: '/RegisterPage',
+          page: () => MyRegisterPage(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/DashboardPage',
           page: () => MyDashboardPage(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/HomeMenu',
+          page: () => HomeMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/ScannerMenu',
+          page: () => ScannerMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/ProfileMenu',
+          page: () => ProfileMenu(),
           binding: MyBindings(),
         ),
       ],

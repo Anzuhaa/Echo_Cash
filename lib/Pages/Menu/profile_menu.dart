@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class HomeMenu extends StatelessWidget {
-  const HomeMenu({super.key});
+class ProfileMenu extends StatelessWidget {
+  const ProfileMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xfff0f0f0),
-      body: Center(child: Text('Ini Home Menu')),
+      body: Center(child: Text('Ini Profile Menu')),
     );
   }
 }

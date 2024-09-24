@@ -15,9 +15,8 @@ class MyHelpbutton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 20,
+      height: 30,
       alignment: Alignment.topLeft,
-      margin: EdgeInsets.symmetric(vertical: 12),
       child: TextButton(
         onPressed: onPressed,
         style: TextButton.styleFrom(

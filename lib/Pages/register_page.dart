@@ -7,17 +7,20 @@ import 'package:echo_cash/Widgets/my_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class MyLoginPage extends StatefulWidget {
-  const MyLoginPage({super.key});
+class MyRegisterPage extends StatefulWidget {
+  const MyRegisterPage({super.key});
 
   @override
-  State<MyLoginPage> createState() => _MyLoginPageState();
+  State<MyRegisterPage> createState() => _MyRegisterPageState();
 }
 
-class _MyLoginPageState extends State<MyLoginPage> {
+class _MyRegisterPageState extends State<MyRegisterPage> {
   bool _obscurePassword = true;
   final TextEditingController username = TextEditingController();
   final TextEditingController password = TextEditingController();
+  final TextEditingController date = TextEditingController();
+  final TextEditingController month = TextEditingController();
+  final TextEditingController year = TextEditingController();
 
   void _togglePasswordVisibility() {
     setState(() {
@@ -36,8 +39,10 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return Scaffold(
       backgroundColor: Color(0xff6482AD),
       appBar: AppBar(
-        backgroundColor: Color(0xff6482AD),
-      ),
+          backgroundColor: Color(0xff6482AD),
+          iconTheme: IconThemeData(
+            color: Color(0xfff0f0f0),
+          )),
       body: Flexible(
         child: Column(
           children: [
@@ -45,7 +50,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
               logoSize: 72,
               mainAxisAlignment: MainAxisAlignment.center,
             ),
-            SizedBox(height: 64),
+            SizedBox(height: 56),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
@@ -74,25 +79,58 @@ class _MyLoginPageState extends State<MyLoginPage> {
                 colors: Color(0x906482AD),
               ),
             ),
+            SizedBox(height: 12),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 32),
-              child: MyHelpbutton(
-                text: "Forgot your password?",
-                onPressed: () {},
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: MyTextfield(
+                      hintText: 'Date',
+                      fontsize: 16,
+                      isObsecure: false,
+                      controller: date,
+                      onIconPressed: () {},
+                      textColor: Color(0xfff0f0f0),
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Expanded(
+                    child: MyTextfield(
+                      hintText: 'Month',
+                      fontsize: 16,
+                      isObsecure: false,
+                      controller: date,
+                      onIconPressed: () {},
+                      textColor: Color(0xfff0f0f0),
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Expanded(
+                    child: MyTextfield(
+                      hintText: 'Year',
+                      fontsize: 16,
+                      isObsecure: false,
+                      controller: date,
+                      onIconPressed: () {},
+                      textColor: Color(0xfff0f0f0),
+                    ),
+                  ),
+                ],
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 32),
               child: MyHelpbutton(
-                text: 'Register account?',
+                text: 'Log in to account?',
                 onPressed: () {
-                  Get.offAndToNamed('/RegisterPage');
+                  Get.offAndToNamed('/');
                 },
               ),
             ),
             Spacer(),
             MyBottomButton(
-              text: "Log In",
+              text: "Register",
               onPressed: () {
                 Get.toNamed('/DashboardPage');
               },

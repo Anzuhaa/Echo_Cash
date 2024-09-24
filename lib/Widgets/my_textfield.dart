@@ -8,6 +8,7 @@ class MyTextfield extends StatelessWidget {
   final bool isObsecure;
   final IconData? icons;
   final Color? colors;
+  final Color? textColor;
   final TextEditingController controller;
   final VoidCallback onIconPressed;
 
@@ -19,6 +20,7 @@ class MyTextfield extends StatelessWidget {
     this.icons,
     required this.controller,
     required this.onIconPressed,
+    required this.textColor,
     this.colors,
   });
 
@@ -28,7 +30,7 @@ class MyTextfield extends StatelessWidget {
       child: TextField(
         style: TextStyle(
           fontFamily: 'MontserratSemi',
-          color: Color(0xff6482AD),
+          color: textColor,
           fontSize: fontsize,
         ),
         obscureText: isObsecure,
@@ -45,7 +47,7 @@ class MyTextfield extends StatelessWidget {
           hintText: hintText,
           hintStyle: TextStyle(
             fontFamily: 'MontserratSemi',
-            color: Color(0xff6482AD),
+            color: textColor,
             fontSize: fontsize,
           ),
           suffixIcon: GestureDetector(
