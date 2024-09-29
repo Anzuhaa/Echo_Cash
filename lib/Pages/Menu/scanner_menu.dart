@@ -1,15 +1,17 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
 
-class ScannerMenu extends StatelessWidget {
+class ScannerMenu extends StatefulWidget {
   const ScannerMenu({super.key});
 
   @override
+  State<ScannerMenu> createState() => _ScannerMenuState();
+}
+
+class _ScannerMenuState extends State<ScannerMenu> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xfff0f0f0),
-      body: Center(child: Text('Ini Scanner Menu')),
-    );
+    return Scaffold();
   }
 }

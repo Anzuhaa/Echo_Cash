@@ -57,6 +57,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/echo_logo.svg
+    - assets/anzuha.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

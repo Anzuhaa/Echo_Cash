@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Bindings/bindings.dart';
+import 'package:echo_cash/Pages/Menu/history_menu.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
+import 'package:echo_cash/Pages/Menu/notifications_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
 import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
 import 'package:echo_cash/Pages/dashboard.dart';
@@ -61,6 +63,16 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/ProfileMenu',
           page: () => ProfileMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/HistoryMenu',
+          page: () => HistoryMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/NotificationsMenu',
+          page: () => NotificationMenu(),
           binding: MyBindings(),
         ),
       ],

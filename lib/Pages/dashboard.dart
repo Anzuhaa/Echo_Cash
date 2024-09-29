@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:echo_cash/Widgets/my_circle_avatar.dart';
 import 'package:echo_cash/controllers/dashboard_controller.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
@@ -27,17 +28,27 @@ class MyDashboardPage extends StatelessWidget {
             animationDuration: Duration(milliseconds: 400),
             onTap: dashboardController.changesMenu,
             items: [
-              Icon(
-                Icons.home_rounded,
-                color: Color(0xfff0f0f0),
+              MyCircleAvatar(
+                radius: 16,
+                bgColor: Color(0x006482AD),
+                icon: Icon(
+                  Icons.home_rounded,
+                  color: Color(0xfff0f0f0),
+                  size: 32,
+                ),
               ),
-              Icon(
-                Icons.qr_code_scanner_rounded,
-                color: Color(0xfff0f0f0),
+              MyCircleAvatar(
+                radius: 16,
+                bgColor: Color(0x006482AD),
+                icon: Icon(
+                  Icons.qr_code_scanner_rounded,
+                  color: Color(0xfff0f0f0),
+                  size: 32,
+                ),
               ),
-              Icon(
-                Icons.person,
-                color: Color(0xfff0f0f0),
+              CircleAvatar(
+                radius: 16,
+                backgroundImage: AssetImage('assets/anzuha.jpg'),
               ),
             ],
           ),

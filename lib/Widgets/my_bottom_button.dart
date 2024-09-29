@@ -18,7 +18,7 @@ class MyBottomButton extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 120,
+            height: 130,
             width: double.infinity,
             decoration: BoxDecoration(
               color: Color(0xFFF0F0F0),
@@ -31,18 +31,19 @@ class MyBottomButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                    child: MyTextSpan(
-                        text1:
-                            "By logging in or registering, you agree to Echo's ",
-                        text2: "Terms of Service ",
-                        text3: "and ",
-                        text4: "Privacy Policy",
-                        fontsize: 12,
-                        fontfamily: 'MontserratSemi',
-                        colorPrimary: Color(0xff000000),
-                        colorSpan: Color(0xff6482AD),
-                        textAlign: TextAlign.start)),
+                  padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                  child: MyTextSpan(
+                      text1:
+                          "By logging in or registering, you agree to Echo's ",
+                      text2: "Terms of Service ",
+                      text3: "and ",
+                      text4: "Privacy Policy",
+                      fontsize: 12,
+                      fontfamily: 'MontserratSemi',
+                      colorPrimary: Color(0xff000000),
+                      colorSpan: Color(0xff6482AD),
+                      textAlign: TextAlign.start),
+                ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   child: MyTextbutton(

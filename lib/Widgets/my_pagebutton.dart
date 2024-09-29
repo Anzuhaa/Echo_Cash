@@ -2,18 +2,17 @@
 
 import 'package:flutter/material.dart';
 
-class MyTextbutton extends StatelessWidget {
+class MyPageButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final Color backgroundColor;
-  final IconData? icons;
-  final Color? colors;
-
+  final Color iconsColor;
+  final IconData iconData;
   final Color textColor;
   final double height;
   final double borderRadius;
 
-  const MyTextbutton({
+  const MyPageButton({
     Key? key,
     required this.text,
     required this.onPressed,
@@ -21,8 +20,8 @@ class MyTextbutton extends StatelessWidget {
     required this.textColor,
     this.height = 60,
     this.borderRadius = 4.0,
-    this.icons,
-    this.colors,
+    required this.iconsColor,
+    required this.iconData,
   }) : super(key: key);
 
   @override
@@ -30,7 +29,6 @@ class MyTextbutton extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: height,
-      padding: EdgeInsets.symmetric(vertical: 8),
       child: TextButton(
         onPressed: onPressed,
         style: TextButton.styleFrom(
@@ -39,13 +37,21 @@ class MyTextbutton extends StatelessWidget {
             borderRadius: BorderRadius.circular(borderRadius),
           ),
         ),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontFamily: 'MontserratSemi',
-            color: textColor,
-            fontSize: 14,
-          ),
+        child: Column(
+          children: [
+            Icon(
+              iconData,
+              color: iconsColor,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                fontFamily: 'MontserratSemi',
+                color: textColor,
+                fontSize: 14,
+              ),
+            ),
+          ],
         ),
       ),
     );
