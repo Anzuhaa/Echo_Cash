@@ -49,6 +49,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
+                readMode: false,
                 hintText: 'Username',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -57,12 +58,14 @@ class _MyLoginPageState extends State<MyLoginPage> {
                 onIconPressed: _toggleUsernameClear,
                 icons: Icons.clear_rounded,
                 colors: Color(0x906482AD),
+                bgColor: Color(0x90F0F0F0),
               ),
             ),
             SizedBox(height: 12),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
+                readMode: false,
                 hintText: 'Password',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -72,6 +75,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
                 icons:
                     _obscurePassword ? Icons.visibility : Icons.visibility_off,
                 colors: Color(0x906482AD),
+                bgColor: Color(0x90F0F0F0),
               ),
             ),
             Padding(

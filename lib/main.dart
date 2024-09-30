@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:camera/camera.dart';
 import 'package:echo_cash/Bindings/bindings.dart';
 import 'package:echo_cash/Pages/Menu/history_menu.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
 import 'package:echo_cash/Pages/Menu/notifications_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
 import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
+import 'package:echo_cash/Pages/Menu/transaction_menu.dart';
 import 'package:echo_cash/Pages/dashboard.dart';
 import 'package:echo_cash/Pages/login_page.dart';
 import 'package:echo_cash/Pages/register_page.dart';
@@ -73,6 +75,48 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/NotificationsMenu',
           page: () => NotificationMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/TopUpMenu',
+          page: () => TransactionMenu(
+            titleText: "Top up",
+            boldText: "Indomaret",
+            semiText: "Top up",
+            onPressed: () {},
+            detailColor: Color(0x2014FF00),
+            nominalText: 'Nominal Top up',
+            buttonText: 'Top up',
+            iconData: Icons.touch_app_rounded,
+          ),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/TransferMenu',
+          page: () => TransactionMenu(
+            titleText: "Transfer",
+            boldText: "Username",
+            semiText: "Valid",
+            onPressed: () {},
+            detailColor: Color(0x2014FF00),
+            nominalText: 'Nominal Transfer',
+            buttonText: 'Transfer',
+            iconData: Icons.compare_arrows_rounded,
+          ),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/CashOutMenu',
+          page: () => TransactionMenu(
+            titleText: "Cash Out",
+            boldText: "Indomaret",
+            semiText: "Cash Out",
+            onPressed: () {},
+            detailColor: Color(0x2014FF00),
+            nominalText: 'Nominal Cash Out',
+            buttonText: 'Cash Out',
+            iconData: Icons.monetization_on_rounded,
+          ),
           binding: MyBindings(),
         ),
       ],

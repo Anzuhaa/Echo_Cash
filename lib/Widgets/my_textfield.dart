@@ -8,8 +8,10 @@ class MyTextfield extends StatelessWidget {
   final bool isObsecure;
   final IconData? icons;
   final Color? colors;
+  final bool readMode;
+  final Color bgColor;
   final Color? textColor;
-  final TextEditingController controller;
+  final TextEditingController? controller;
   final VoidCallback onIconPressed;
 
   const MyTextfield({
@@ -22,12 +24,15 @@ class MyTextfield extends StatelessWidget {
     required this.onIconPressed,
     required this.textColor,
     this.colors,
+    required this.bgColor,
+    required this.readMode,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextField(
+        readOnly: readMode,
         style: TextStyle(
           fontFamily: 'MontserratSemi',
           color: textColor,
@@ -43,7 +48,7 @@ class MyTextfield extends StatelessWidget {
               borderSide: BorderSide(color: Color(0xff6482AD)),
               borderRadius: BorderRadius.circular(16)),
           filled: true,
-          fillColor: Color(0x90F0F0F0),
+          fillColor: bgColor,
           hintText: hintText,
           hintStyle: TextStyle(
             fontFamily: 'MontserratSemi',

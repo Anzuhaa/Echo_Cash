@@ -13,14 +13,16 @@ class MainHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.only(bottom: 4, top: 64, left: 32, right: 32),
+      padding: EdgeInsets.only(bottom: 0, top: 64, left: 32, right: 32),
       child: Column(
         children: [
           Row(
             children: [
               MyCircleAvatar(
                   assetImage: AssetImage('assets/anzuha.jpg'),
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed("/ProfileMenu");
+                  },
                   radius: 24),
               SizedBox(width: 8),
               GestureDetector(

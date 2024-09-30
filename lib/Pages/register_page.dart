@@ -54,6 +54,7 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
+                readMode: false,
                 hintText: 'Username',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -62,12 +63,14 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                 onIconPressed: _toggleUsernameClear,
                 icons: Icons.clear_rounded,
                 colors: Color(0x906482AD),
+                bgColor: Color(0x90F0F0F0),
               ),
             ),
             SizedBox(height: 12),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
+                readMode: false,
                 hintText: 'Password',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -77,6 +80,7 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                 icons:
                     _obscurePassword ? Icons.visibility : Icons.visibility_off,
                 colors: Color(0x906482AD),
+                bgColor: Color(0x90F0F0F0),
               ),
             ),
             SizedBox(height: 12),
@@ -86,34 +90,40 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                 children: [
                   Expanded(
                     child: MyTextfield(
+                      readMode: false,
                       hintText: 'Date',
                       fontsize: 16,
                       isObsecure: false,
                       controller: date,
                       onIconPressed: () {},
                       textColor: Color(0xfff0f0f0),
+                      bgColor: Color(0x90F0F0F0),
                     ),
                   ),
                   SizedBox(width: 8),
                   Expanded(
                     child: MyTextfield(
+                      readMode: false,
                       hintText: 'Month',
                       fontsize: 16,
                       isObsecure: false,
                       controller: date,
                       onIconPressed: () {},
                       textColor: Color(0xfff0f0f0),
+                      bgColor: Color(0x90F0F0F0),
                     ),
                   ),
                   SizedBox(width: 8),
                   Expanded(
                     child: MyTextfield(
+                      readMode: false,
                       hintText: 'Year',
                       fontsize: 16,
                       isObsecure: false,
                       controller: date,
                       onIconPressed: () {},
                       textColor: Color(0xfff0f0f0),
+                      bgColor: Color(0x90F0F0F0),
                     ),
                   ),
                 ],

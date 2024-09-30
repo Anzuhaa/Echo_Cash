@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class ModelCard {
@@ -25,5 +27,21 @@ class ModelHistory {
     this.historyDetail,
     this.historyPrice,
     this.historyColor,
+  );
+}
+
+class ModelMenuButton {
+  final String MenuButtonText;
+  final VoidCallback MenuButtononPressed;
+  final Color MenuButtonColor;
+  final IconData? MenuButtoniconData;
+  final Color? MenuButtonIconColor;
+
+  ModelMenuButton(
+    this.MenuButtonText,
+    this.MenuButtononPressed,
+    this.MenuButtonColor,
+    this.MenuButtoniconData,
+    this.MenuButtonIconColor,
   );
 }

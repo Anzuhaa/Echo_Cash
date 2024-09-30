@@ -18,7 +18,9 @@ class MainMenus extends StatelessWidget {
             child: Column(
               children: [
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed("/TopUpMenu");
+                  },
                   child: MyCircleAvatar(
                     radius: 32,
                     bgColor: Color(0xfff0f0f0),
@@ -42,7 +44,9 @@ class MainMenus extends StatelessWidget {
             child: Column(
               children: [
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed("/TransferMenu");
+                  },
                   child: MyCircleAvatar(
                     radius: 32,
                     bgColor: Color(0xfff0f0f0),
@@ -66,7 +70,9 @@ class MainMenus extends StatelessWidget {
             child: Column(
               children: [
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed("/CashOutMenu");
+                  },
                   child: MyCircleAvatar(
                     radius: 32,
                     bgColor: Color(0xfff0f0f0),
