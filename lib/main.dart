@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:camera/camera.dart';
 import 'package:echo_cash/Bindings/bindings.dart';
-import 'package:echo_cash/Pages/Menu/history_menu.dart';
+import 'package:echo_cash/Pages/Menu/data_menu.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
 import 'package:echo_cash/Pages/Menu/notifications_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
@@ -40,12 +39,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/',
           page: () => MyLoginPage(),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/RegisterPage',
           page: () => MyRegisterPage(),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/DashboardPage',
@@ -60,22 +57,24 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/ScannerMenu',
           page: () => ScannerMenu(),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/ProfileMenu',
           page: () => ProfileMenu(),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/HistoryMenu',
-          page: () => HistoryMenu(),
-          binding: MyBindings(),
+          page: () => DataMenu(
+              headerText: 'History',
+              containerText: 'History Data',
+              headerIconData: Icons.rotate_left_rounded),
         ),
         GetPage(
-          name: '/NotificationsMenu',
-          page: () => NotificationMenu(),
-          binding: MyBindings(),
+          name: '/ContactsMenu',
+          page: () => DataMenu(
+              headerText: 'Contacts',
+              containerText: 'Contact Data',
+              headerIconData: Icons.contacts_rounded),
         ),
         GetPage(
           name: '/TopUpMenu',
@@ -85,11 +84,11 @@ class MyApp extends StatelessWidget {
             semiText: "Top up",
             onPressed: () {},
             detailColor: Color(0x2014FF00),
+            usercodeText: 'Indomaret Top up Code',
             nominalText: 'Nominal Top up',
             buttonText: 'Top up',
             iconData: Icons.touch_app_rounded,
           ),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/TransferMenu',
@@ -99,11 +98,11 @@ class MyApp extends StatelessWidget {
             semiText: "Valid",
             onPressed: () {},
             detailColor: Color(0x2014FF00),
+            usercodeText: 'Username Transfer',
             nominalText: 'Nominal Transfer',
             buttonText: 'Transfer',
             iconData: Icons.compare_arrows_rounded,
           ),
-          binding: MyBindings(),
         ),
         GetPage(
           name: '/CashOutMenu',
@@ -113,11 +112,11 @@ class MyApp extends StatelessWidget {
             semiText: "Cash Out",
             onPressed: () {},
             detailColor: Color(0x2014FF00),
+            usercodeText: 'Indomaret Cash out Code',
             nominalText: 'Nominal Cash Out',
             buttonText: 'Cash Out',
             iconData: Icons.monetization_on_rounded,
           ),
-          binding: MyBindings(),
         ),
       ],
     );

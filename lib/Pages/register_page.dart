@@ -52,9 +52,9 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
             ),
             SizedBox(height: 56),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
-                readMode: false,
+                textInputType: TextInputType.text,
                 hintText: 'Username',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -68,9 +68,9 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
             ),
             SizedBox(height: 12),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
-                readMode: false,
+                textInputType: TextInputType.text,
                 hintText: 'Password',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -85,12 +85,12 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
             ),
             SizedBox(height: 12),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Expanded(
                     child: MyTextfield(
-                      readMode: false,
+                      textInputType: TextInputType.text,
                       hintText: 'Date',
                       fontsize: 16,
                       isObsecure: false,
@@ -103,7 +103,7 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                   SizedBox(width: 8),
                   Expanded(
                     child: MyTextfield(
-                      readMode: false,
+                      textInputType: TextInputType.text,
                       hintText: 'Month',
                       fontsize: 16,
                       isObsecure: false,
@@ -116,7 +116,7 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
                   SizedBox(width: 8),
                   Expanded(
                     child: MyTextfield(
-                      readMode: false,
+                      textInputType: TextInputType.text,
                       hintText: 'Year',
                       fontsize: 16,
                       isObsecure: false,
@@ -130,7 +130,7 @@ class _MyRegisterPageState extends State<MyRegisterPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 32),
+              padding: EdgeInsets.symmetric(vertical: 2, horizontal: 32),
               child: MyHelpbutton(
                 text: 'Log in to account?',
                 onPressed: () {

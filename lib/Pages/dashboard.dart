@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:echo_cash/Widgets/my_circle_avatar.dart';
-import 'package:echo_cash/controllers/dashboard_controller.dart';
+import 'package:echo_cash/Pages/controllers/dashboard_controller.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
 import 'package:echo_cash/Pages/Menu/scanner_menu.dart';

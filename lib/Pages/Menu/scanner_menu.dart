@@ -3,7 +3,6 @@
 import 'package:echo_cash/Pages/Component/menu_header.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:path/path.dart';
 
 class ScannerMenu extends StatelessWidget {
   const ScannerMenu({super.key});

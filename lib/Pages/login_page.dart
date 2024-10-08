@@ -47,9 +47,9 @@ class _MyLoginPageState extends State<MyLoginPage> {
             ),
             SizedBox(height: 64),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
-                readMode: false,
+                textInputType: TextInputType.text,
                 hintText: 'Username',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),
@@ -63,9 +63,9 @@ class _MyLoginPageState extends State<MyLoginPage> {
             ),
             SizedBox(height: 12),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: MyTextfield(
-                readMode: false,
+                textInputType: TextInputType.text,
                 hintText: 'Password',
                 fontsize: 20,
                 textColor: Color(0xfff0f0f0),

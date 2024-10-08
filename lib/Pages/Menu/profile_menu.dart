@@ -1,11 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Pages/Component/menu_header.dart';
-import 'package:echo_cash/Widgets/my_circle_avatar.dart';
 import 'package:echo_cash/Widgets/my_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({super.key});
@@ -116,17 +114,32 @@ class ProfileMenu extends StatelessWidget {
                       onTap: () {},
                     ),
                     ListTile(
-                        leading: Icon(Icons.logout, color: Color(0xff6482AD)),
-                        title: MyText(
-                            text: "Log Out",
-                            fontsize: 20,
-                            fontfamily: "MontserratSemi",
-                            color: Color(0xff6482AD)),
-                        trailing: Icon(Icons.arrow_forward_ios,
-                            color: Color(0xff6482AD)),
-                        onTap: () {
-                          Get.offAllNamed('/');
-                        }),
+                      leading: Icon(Icons.bookmark_outlined,
+                          color: Color(0xff6482AD)),
+                      title: MyText(
+                          text: "Favorite Contact",
+                          fontsize: 20,
+                          fontfamily: "MontserratSemi",
+                          color: Color(0xff6482AD)),
+                      trailing: Icon(Icons.arrow_forward_ios,
+                          color: Color(0xff6482AD)),
+                      onTap: () {
+                        Get.offAllNamed('/');
+                      },
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.logout, color: Color(0xff6482AD)),
+                      title: MyText(
+                          text: "Log Out",
+                          fontsize: 20,
+                          fontfamily: "MontserratSemi",
+                          color: Color(0xff6482AD)),
+                      trailing: Icon(Icons.arrow_forward_ios,
+                          color: Color(0xff6482AD)),
+                      onTap: () {
+                        Get.offAllNamed('/');
+                      },
+                    ),
                   ],
                 ),
               ),
