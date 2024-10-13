@@ -2,8 +2,9 @@
 
 import 'package:echo_cash/Bindings/bindings.dart';
 import 'package:echo_cash/Pages/Menu/data_menu.dart';
+import 'package:echo_cash/Pages/Menu/fav_contacts_menu.dart';
+import 'package:echo_cash/Pages/Menu/history_menu.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
-import 'package:echo_cash/Pages/Menu/notifications_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
 import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
 import 'package:echo_cash/Pages/Menu/transaction_menu.dart';
@@ -64,17 +65,17 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/HistoryMenu',
-          page: () => DataMenu(
-              headerText: 'History',
-              containerText: 'History Data',
-              headerIconData: Icons.rotate_left_rounded),
+          page: () => HistoryMenu(),
         ),
         GetPage(
           name: '/ContactsMenu',
-          page: () => DataMenu(
-              headerText: 'Contacts',
-              containerText: 'Contact Data',
-              headerIconData: Icons.contacts_rounded),
+          page: () => ContactsMenu(),
+          binding: MyBindings(),
+        ),
+        GetPage(
+          name: '/BookmarkMenu',
+          page: () => BookmarkMenu(),
+          binding: MyBindings(),
         ),
         GetPage(
           name: '/TopUpMenu',

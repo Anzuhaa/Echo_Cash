@@ -5,8 +5,8 @@ import 'package:echo_cash/Pages/Component/menu_history_content.dart';
 import 'package:echo_cash/Widgets/my_text.dart';
 import 'package:flutter/material.dart';
 
-class ContactMenu extends StatelessWidget {
-  ContactMenu({super.key});
+class HistoryMenu extends StatelessWidget {
+  HistoryMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,8 @@ class ContactMenu extends StatelessWidget {
           child: Column(
             children: [
               MenuHeader(
-                iconData: Icons.notifications,
-                text: "Notifications",
+                iconData: Icons.rotate_left_rounded,
+                text: "History",
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 16),
@@ -26,7 +26,7 @@ class ContactMenu extends StatelessWidget {
                 color: Color(0xff7FA1C3),
                 alignment: Alignment.centerLeft,
                 child: MyText(
-                  text: "Notifications",
+                  text: "History Data",
                   fontsize: 24,
                   fontfamily: "MontserratSemi",
                   color: Color(0xfff0f0f0),
