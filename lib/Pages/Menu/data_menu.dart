@@ -74,14 +74,75 @@ class ContactsMenu extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                width: 900,
-                height: 800,
-                child: ContactListView(
-                  username: username.text,
-                  email: email.text,
+              GestureDetector(
+                onTap: () {
+                  if (username.text.isEmpty || email.text.isEmpty) {
+                    Get.snackbar(
+                      'Error',
+                      'Please fill in all fields',
+                      snackPosition: SnackPosition.BOTTOM,
+                    );
+                    return;
+                  }
+                  if (email.text == null) {
+                    Get.snackbar(
+                      'Error',
+                      'Bank email must be valid',
+                      snackPosition: SnackPosition.BOTTOM,
+                    );
+                    return;
+                  }
+
+                  bool emailExists = contactController.contacts
+                      .any((contact) => contact.email == email.text);
+
+                  if (emailExists) {
+                    Get.snackbar(
+                      'Error',
+                      'Bank number already exists',
+                      snackPosition: SnackPosition.BOTTOM,
+                    );
+                    return;
+                  }
+                  ContactModel contact = ContactModel(
+                    name: username.text.toString(),
+                    email: email.text.toString(),
+                  );
+                  contactController.addContact(contact);
+
+                  username.clear();
+                  email.clear();
+
+                  Get.snackbar("Success", "Contact added successfully",
+                      snackPosition: SnackPosition.BOTTOM);
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    color: Color(0xff7FA1C3),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  width: 250,
+                  height: 60,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: MyText(
+                          text: "add contact",
+                          fontsize: 16,
+                          fontfamily: 'MontserratSemi',
+                          color: Color(0xfff0f0f0),
+                        ),
+                      ),
+                      Icon(
+                        Icons.bookmark_add,
+                        color: Color(0xfff0f0f0),
+                      ),
+                    ],
+                  ),
                 ),
               ),
+              Container(height: 500, child: ContactListView()),
             ],
           ),
         ),

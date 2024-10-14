@@ -1,25 +1,21 @@
-import 'dart:ffi';
-
-import 'package:flutter/material.dart';
-
 class ContactModel {
-  final int? id;
-  final String name;
-  final String bio;
-  final String email;
-
+  int? id;
+  String name;
+  String email;
+  int bookmark;
   ContactModel({
     this.id,
     required this.name,
-    required this.bio,
     required this.email,
+    this.bookmark = 0,
   });
+
   Map<String, dynamic> toMap() {
     return {
       'id': id,
       'name': name,
-      'bio': bio,
       'email': email,
+      'bookmark': bookmark,
     };
   }
 
@@ -27,17 +23,8 @@ class ContactModel {
     return ContactModel(
       id: map['id'],
       name: map['name'],
-      bio: map['bio'],
       email: map['email'],
+      bookmark: map['bookmark'] ?? 0,
     );
   }
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(this, other)) return true;
-    return other is ContactModel && other.name == name && other.email == email;
-  }
-
-  @override
-  int get hashCode => name.hashCode ^ email.hashCode;
 }

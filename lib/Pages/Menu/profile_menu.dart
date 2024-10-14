@@ -124,7 +124,7 @@ class ProfileMenu extends StatelessWidget {
                       trailing: Icon(Icons.arrow_forward_ios,
                           color: Color(0xff6482AD)),
                       onTap: () {
-                        Get.offAndToNamed('/BookmarkMenu');
+                        Get.toNamed('/BookmarkMenu');
                       },
                     ),
                     ListTile(

@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:echo_cash/Model/contact_model.dart';
+import 'package:echo_cash/Pages/Component/menu_bookmark_listview.dart';
+import 'package:echo_cash/Pages/Component/menu_contact_listview.dart';
+import 'package:echo_cash/Pages/Component/menu_header.dart';
 import 'package:echo_cash/Pages/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,70 +11,20 @@ class BookmarkMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the ContactController which includes the bookmark management.
     final ContactController controller = Get.find();
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bookmarks'),
+      backgroundColor: Color(0xff6482AD),
+      body: Column(
+        children: [
+          Container(
+            child: MenuHeader(
+                text: 'Bookmark Contact', iconData: Icons.bookmark_rounded),
+          ),
+          Container(height: 500, child: BookmarkListView()),
+        ],
       ),
-      body: Obx(() {
-        if (controller.bookmarks.isEmpty) {
-          return const Center(child: Text('No bookmarks yet.'));
-        }
-
-        return ListView.builder(
-          itemCount: controller.bookmarks.length,
-          itemBuilder: (context, index) {
-            final ContactModel item = controller.bookmarks[index];
-
-            return ListTile(
-              title: Text(item.name),
-              subtitle: Text('Rp${item.bio.toString()}'),
-              trailing: IconButton(
-                icon: Icon(
-                  Icons.bookmark,
-                  color: Colors.orange,
-                ),
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        title: const Text('Konfirmasi'),
-                        content: const Text(
-                            'Apakah Anda ingin menghapus dari bookmark?'),
-                        actions: <Widget>[
-                          TextButton(
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                            child: const Text('No'),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                              Future.delayed(const Duration(milliseconds: 300),
-                                  () {
-                                controller.toggleBookmark(item);
-                                Get.snackbar(
-                                  "Bookmark Toggled",
-                                  "${item.name} telah dihapus dari bookmark",
-                                  snackPosition: SnackPosition.BOTTOM,
-                                );
-                              });
-                            },
-                            child: const Text('Yes'),
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                },
-              ),
-            );
-          },
-        );
-      }),
     );
   }
 }
