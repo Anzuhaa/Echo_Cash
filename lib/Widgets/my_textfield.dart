@@ -8,11 +8,11 @@ class MyTextfield extends StatelessWidget {
   final bool isObsecure;
   final IconData? icons;
   final Color? colors;
-  final bool readMode;
   final Color bgColor;
   final Color? textColor;
   final TextEditingController? controller;
   final VoidCallback onIconPressed;
+  final TextInputType? textInputType;
 
   const MyTextfield({
     super.key,
@@ -25,14 +25,14 @@ class MyTextfield extends StatelessWidget {
     required this.textColor,
     this.colors,
     required this.bgColor,
-    required this.readMode,
+    required this.textInputType,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextField(
-        readOnly: readMode,
+        keyboardType: textInputType,
         style: TextStyle(
           fontFamily: 'MontserratSemi',
           color: textColor,

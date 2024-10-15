@@ -17,6 +17,7 @@ class MyLogo extends StatelessWidget {
       mainAxisAlignment: mainAxisAlignment,
       children: [
         MyText(
+          textAlign: TextAlign.center,
           text: "ECH",
           fontsize: logoSize,
           fontfamily: 'MontserratBold',

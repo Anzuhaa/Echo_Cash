@@ -17,17 +17,19 @@ class MyTextHistory extends StatelessWidget {
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyText(
+                  textAlign: TextAlign.center,
                   text: modelHistory.historytitle,
                   fontsize: 16,
                   fontfamily: "MontserratBold",
                   color: Color(0xff6482AD),
                 ),
                 MyText(
+                  textAlign: TextAlign.center,
                   text: modelHistory.historyDetail,
                   fontsize: 16,
                   fontfamily: "MontserratSemi",
@@ -45,6 +47,7 @@ class MyTextHistory extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: MyText(
+                textAlign: TextAlign.center,
                 text: modelHistory.historyPrice,
                 fontsize: 16,
                 fontfamily: "MontserratBold",

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:echo_cash/Component/adapter_list_history.dart';
 import 'package:echo_cash/Model/model_card.dart';
@@ -41,7 +41,7 @@ class MenuHistoryContent extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(right: 8, left: 8, bottom: 32),
       child: Container(
-        height: 900,
+        height: 850,
         child: ListView.builder(
           itemCount: historyData.length,
           itemBuilder: (context, index) {

@@ -32,6 +32,7 @@ class MainMenus extends StatelessWidget {
                   ),
                 ),
                 MyText(
+                  textAlign: TextAlign.center,
                   text: "Top Up",
                   fontsize: 16,
                   fontfamily: "MontserratSemi",
@@ -58,6 +59,7 @@ class MainMenus extends StatelessWidget {
                   ),
                 ),
                 MyText(
+                  textAlign: TextAlign.center,
                   text: "Transfer",
                   fontsize: 16,
                   fontfamily: "MontserratSemi",
@@ -84,6 +86,7 @@ class MainMenus extends StatelessWidget {
                   ),
                 ),
                 MyText(
+                  textAlign: TextAlign.center,
                   text: "Cash Out",
                   fontsize: 16,
                   fontfamily: "MontserratSemi",
@@ -110,6 +113,7 @@ class MainMenus extends StatelessWidget {
                   ),
                 ),
                 MyText(
+                  textAlign: TextAlign.center,
                   text: "History",
                   fontsize: 16,
                   fontfamily: "MontserratSemi",

@@ -2,8 +2,7 @@
 
 import 'package:echo_cash/Model/model_card.dart';
 import 'package:echo_cash/Widgets/my_pagebutton.dart';
-import 'package:echo_cash/Widgets/my_text.dart';
-import 'package:echo_cash/Widgets/my_textbutton.dart';
+
 import 'package:flutter/material.dart';
 
 class AdapterCard extends StatelessWidget {

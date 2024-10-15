@@ -1,11 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Pages/Component/menu_header.dart';
-import 'package:echo_cash/Widgets/my_circle_avatar.dart';
 import 'package:echo_cash/Widgets/my_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({super.key});
@@ -53,6 +51,7 @@ class ProfileMenu extends StatelessWidget {
                     ),
                     Center(
                       child: MyText(
+                        textAlign: TextAlign.center,
                         text: "Anzuhaa",
                         fontsize: 24,
                         fontfamily: 'MontserratSemi',
@@ -62,6 +61,7 @@ class ProfileMenu extends StatelessWidget {
                     SizedBox(height: 4),
                     Center(
                       child: MyText(
+                        textAlign: TextAlign.center,
                         text: "Anzuha@gmail.com",
                         fontsize: 20,
                         fontfamily: "MontserratSemi",
@@ -96,6 +96,7 @@ class ProfileMenu extends StatelessWidget {
                           ),
                           SizedBox(height: 16),
                           MyText(
+                              textAlign: TextAlign.center,
                               text: "Input Your Bio",
                               fontsize: 16,
                               fontfamily: "MontserratSemi",
@@ -107,6 +108,7 @@ class ProfileMenu extends StatelessWidget {
                     ListTile(
                       leading: Icon(Icons.settings, color: Color(0xff6482AD)),
                       title: MyText(
+                          textAlign: TextAlign.center,
                           text: "Terms of Service",
                           fontsize: 20,
                           fontfamily: "MontserratSemi",
@@ -116,17 +118,48 @@ class ProfileMenu extends StatelessWidget {
                       onTap: () {},
                     ),
                     ListTile(
-                        leading: Icon(Icons.logout, color: Color(0xff6482AD)),
-                        title: MyText(
-                            text: "Log Out",
-                            fontsize: 20,
-                            fontfamily: "MontserratSemi",
-                            color: Color(0xff6482AD)),
-                        trailing: Icon(Icons.arrow_forward_ios,
-                            color: Color(0xff6482AD)),
-                        onTap: () {
-                          Get.offAllNamed('/');
-                        }),
+                      leading: Icon(Icons.person, color: Color(0xff6482AD)),
+                      title: MyText(
+                          textAlign: TextAlign.center,
+                          text: "My Contact",
+                          fontsize: 20,
+                          fontfamily: "MontserratSemi",
+                          color: Color(0xff6482AD)),
+                      trailing: Icon(Icons.arrow_forward_ios,
+                          color: Color(0xff6482AD)),
+                      onTap: () {
+                        Get.toNamed('/ContactMenu');
+                      },
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.bookmark_outlined,
+                          color: Color(0xff6482AD)),
+                      title: MyText(
+                          textAlign: TextAlign.center,
+                          text: "Favorite Contact",
+                          fontsize: 20,
+                          fontfamily: "MontserratSemi",
+                          color: Color(0xff6482AD)),
+                      trailing: Icon(Icons.arrow_forward_ios,
+                          color: Color(0xff6482AD)),
+                      onTap: () {
+                        Get.toNamed('/BookmarkMenu');
+                      },
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.logout, color: Color(0xff6482AD)),
+                      title: MyText(
+                          textAlign: TextAlign.center,
+                          text: "Log Out",
+                          fontsize: 20,
+                          fontfamily: "MontserratSemi",
+                          color: Color(0xff6482AD)),
+                      trailing: Icon(Icons.arrow_forward_ios,
+                          color: Color(0xff6482AD)),
+                      onTap: () {
+                        Get.offAllNamed('/');
+                      },
+                    ),
                   ],
                 ),
               ),
@@ -144,6 +177,7 @@ class ProfileMenu extends StatelessWidget {
         Icon(icon, color: Color(0xff6482AD), size: 32),
         const SizedBox(height: 8),
         MyText(
+          textAlign: TextAlign.center,
           text: label,
           fontsize: 16,
           fontfamily: "MontserratSemi",
