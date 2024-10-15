@@ -25,17 +25,6 @@ class MainHeader extends StatelessWidget {
                     Get.toNamed("/ProfileMenu");
                   },
                   radius: 24),
-              SizedBox(width: 8),
-              GestureDetector(
-                onTap: () {
-                  Get.toNamed("/ContactsMenu");
-                },
-                child: Icon(
-                  Icons.contacts_rounded,
-                  size: 40,
-                  color: Color(0xfff0f0f0),
-                ),
-              ),
               Expanded(
                   child: MyLogo(
                       logoSize: 40, mainAxisAlignment: MainAxisAlignment.end))

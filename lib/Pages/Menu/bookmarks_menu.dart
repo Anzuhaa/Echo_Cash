@@ -1,6 +1,6 @@
-import 'package:echo_cash/Model/contact_model.dart';
+// ignore_for_file: unused_local_variable
+
 import 'package:echo_cash/Pages/Component/menu_bookmark_listview.dart';
-import 'package:echo_cash/Pages/Component/menu_contact_listview.dart';
 import 'package:echo_cash/Pages/Component/menu_header.dart';
 import 'package:echo_cash/Pages/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +11,6 @@ class BookmarkMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Get the ContactController which includes the bookmark management.
     final ContactController controller = Get.find();
 
     return Scaffold(
@@ -22,7 +21,7 @@ class BookmarkMenu extends StatelessWidget {
             child: MenuHeader(
                 text: 'Bookmark Contact', iconData: Icons.bookmark_rounded),
           ),
-          Container(height: 500, child: BookmarkListView()),
+          Container(height: 820, child: BookmarkListView()),
         ],
       ),
     );

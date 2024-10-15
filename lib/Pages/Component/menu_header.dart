@@ -31,6 +31,7 @@ class MenuHeader extends StatelessWidget {
               ),
               SizedBox(width: 8),
               MyText(
+                textAlign: TextAlign.center,
                 text: text,
                 fontsize: 24,
                 fontfamily: "MontserratSemi",

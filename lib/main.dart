@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Bindings/bindings.dart';
-import 'package:echo_cash/Pages/Menu/data_menu.dart';
-import 'package:echo_cash/Pages/Menu/fav_contacts_menu.dart';
+import 'package:echo_cash/Pages/Menu/contacts_menu.dart';
+import 'package:echo_cash/Pages/Menu/bookmarks_menu.dart';
 import 'package:echo_cash/Pages/Menu/history_menu.dart';
 import 'package:echo_cash/Pages/Menu/home_menu.dart';
 import 'package:echo_cash/Pages/Menu/profile_menu.dart';
@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
           page: () => HistoryMenu(),
         ),
         GetPage(
-          name: '/ContactsMenu',
+          name: '/ContactMenu',
           page: () => ContactsMenu(),
           binding: MyBindings(),
         ),

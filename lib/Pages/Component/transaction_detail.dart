@@ -32,12 +32,14 @@ class TransactionDetail extends StatelessWidget {
               child: Column(
                 children: [
                   MyText(
+                    textAlign: TextAlign.center,
                     text: boldText,
                     fontsize: 20,
                     fontfamily: "MontserratBold",
                     color: Color(0xff6482AD),
                   ),
                   MyText(
+                    textAlign: TextAlign.center,
                     text: semiText,
                     fontsize: 16,
                     fontfamily: "MontserratSemi",

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:echo_cash/Pages/Component/main_header.dart';
 import 'package:echo_cash/Pages/Component/main_content.dart';
