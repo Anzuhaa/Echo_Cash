@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Model/model_card.dart';
-import 'package:echo_cash/Widgets/my_text_history.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_text_history.dart';
 import 'package:flutter/material.dart';
 
 class AdapterHistory extends StatelessWidget {

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:echo_cash/Model/model_card.dart';
-import 'package:echo_cash/Widgets/my_textbutton.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_textbutton.dart';
 import 'package:flutter/material.dart';
 
 class AdapterListButton extends StatelessWidget {
