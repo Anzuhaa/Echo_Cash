@@ -1,16 +1,16 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:echo_cash/Bindings/bindings.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/contacts_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/bookmarks_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/history_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/home_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/profile_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/scanner_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/transactionMenu/transaction_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/dashboard.dart';
-import 'package:echo_cash/Pages/mobileLayout/login_page.dart';
-import 'package:echo_cash/Pages/mobileLayout/register_page.dart';
+import 'package:echo_cash/Pages/Menu/contacts_menu.dart';
+import 'package:echo_cash/Pages/Menu/bookmarks_menu.dart';
+import 'package:echo_cash/Pages/Menu/history_menu.dart';
+import 'package:echo_cash/Pages/Menu/home_menu.dart';
+import 'package:echo_cash/Pages/Menu/profile_menu.dart';
+import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
+import 'package:echo_cash/Pages/Menu/transactionMenu/transaction_menu.dart';
+import 'package:echo_cash/Pages/dashboard.dart';
+import 'package:echo_cash/Pages/login_page.dart';
+import 'package:echo_cash/Pages/register_page.dart';
 import 'package:echo_cash/Pages/responsive_layout.dart';
 import 'package:echo_cash/controllers/responsive_controller.dart';
 import 'package:flutter/material.dart';

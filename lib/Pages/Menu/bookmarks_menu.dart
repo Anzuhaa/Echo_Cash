@@ -1,7 +1,7 @@
 // ignore_for_file: unused_local_variable
 
-import 'package:echo_cash/Pages/mobileLayout/Component/menuComponent/menu_bookmark_listview.dart';
-import 'package:echo_cash/Pages/mobileLayout/Component/menuComponent/menu_header.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_bookmark_listview.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_header.dart';
 import 'package:echo_cash/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

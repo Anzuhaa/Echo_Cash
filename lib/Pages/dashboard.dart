@@ -3,9 +3,9 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:echo_cash/Pages/responsive_layout.dart';
 import 'package:echo_cash/Widgets/mobileWidgets/my_circle_avatar.dart';
 import 'package:echo_cash/controllers/dashboard_controller.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/home_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/profile_menu.dart';
-import 'package:echo_cash/Pages/mobileLayout/Menu/scanner_menu.dart';
+import 'package:echo_cash/Pages/Menu/home_menu.dart';
+import 'package:echo_cash/Pages/Menu/profile_menu.dart';
+import 'package:echo_cash/Pages/Menu/scanner_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

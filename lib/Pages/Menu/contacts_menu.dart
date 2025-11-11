@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors_in_immutables, unnecessary_null_comparison
 
 import 'package:echo_cash/Model/contact_model.dart';
-import 'package:echo_cash/Pages/mobileLayout/Component/menuComponent/menu_contact_listview.dart';
-import 'package:echo_cash/Pages/mobileLayout/Component/menuComponent/menu_header.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_contact_listview.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_header.dart';
 import 'package:echo_cash/controllers/contact_controller.dart';
 import 'package:echo_cash/Widgets/mobileWidgets/my_textbutton.dart';
 import 'package:echo_cash/Widgets/mobileWidgets/my_textfield.dart';
