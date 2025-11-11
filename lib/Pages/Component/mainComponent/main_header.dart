@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:echo_cash/Widgets/my_balance.dart';
-import 'package:echo_cash/Widgets/my_circle_avatar.dart';
-import 'package:echo_cash/Widgets/my_logo.dart';
-import 'package:echo_cash/Widgets/my_text.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_balance.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_circle_avatar.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_logo.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, use_super_parameters
 
 import 'package:echo_cash/Model/contact_model.dart';
-import 'package:echo_cash/Pages/controllers/contact_controller.dart';
-import 'package:echo_cash/Widgets/my_text.dart';
+import 'package:echo_cash/controllers/contact_controller.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

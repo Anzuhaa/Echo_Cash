@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, prefer_const_constructors_in_immutables
 
-import 'package:echo_cash/Pages/Component/menu_header.dart';
-import 'package:echo_cash/Pages/Component/menu_history_content.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_header.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_history_content.dart';
 import 'package:flutter/material.dart';
 
 class HistoryMenu extends StatelessWidget {

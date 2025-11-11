@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously, prefer_const_constructors, avoid_print
 
-import 'package:echo_cash/Pages/Component/menu_header.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_header.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 

@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
-import 'package:echo_cash/Pages/Component/menu_header.dart';
-import 'package:echo_cash/Pages/Component/transaction_detail.dart';
-import 'package:echo_cash/Widgets/my_bottom_button.dart';
-import 'package:echo_cash/Widgets/my_textfield.dart';
+import 'package:echo_cash/Pages/Component/menuComponent/menu_header.dart';
+import 'package:echo_cash/Pages/Menu/transactionMenu/transaction_detail.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_bottom_button.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class TransactionMenu extends StatelessWidget {

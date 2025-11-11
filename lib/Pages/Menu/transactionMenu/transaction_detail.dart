@@ -1,4 +1,4 @@
-import 'package:echo_cash/Widgets/my_text.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_text.dart';
 import 'package:flutter/material.dart';
 
 class TransactionDetail extends StatelessWidget {

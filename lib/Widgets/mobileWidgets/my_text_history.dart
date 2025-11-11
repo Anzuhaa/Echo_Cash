@@ -1,5 +1,5 @@
 import 'package:echo_cash/Model/model_card.dart';
-import 'package:echo_cash/Widgets/my_text.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_text.dart';
 import 'package:flutter/material.dart';
 
 class MyTextHistory extends StatelessWidget {

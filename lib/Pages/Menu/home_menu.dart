@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
-import 'package:echo_cash/Pages/Component/main_header.dart';
-import 'package:echo_cash/Pages/Component/main_content.dart';
-import 'package:echo_cash/Pages/Component/main_menus.dart';
-import 'package:echo_cash/Pages/Component/main_rowPhoto.dart';
-import 'package:echo_cash/Pages/Menu/logic/balance.dart';
-import 'package:echo_cash/Pages/controllers/transaction_controller.dart';
-import 'package:echo_cash/Widgets/my_balance.dart';
+import 'package:echo_cash/Pages/Component/mainComponent/main_header.dart';
+import 'package:echo_cash/Pages/Component/mainComponent/main_content.dart';
+import 'package:echo_cash/Pages/Component/mainComponent/main_menus.dart';
+import 'package:echo_cash/Pages/Component/mainComponent/main_rowPhoto.dart';
+import 'package:echo_cash/logic/balance.dart';
+import 'package:echo_cash/controllers/transaction_controller.dart';
+import 'package:echo_cash/Widgets/mobileWidgets/my_balance.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
